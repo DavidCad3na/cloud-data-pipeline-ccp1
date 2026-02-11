@@ -65,7 +65,7 @@ jobs:
       uses: docker/metadata-action@v5
       with:
         images: |
-          ${{ secrets.DOCKER_USERNAME }}/diet-analysis
+          davidcad3na/diet-analysis
         tags: |
           type=ref,event=branch
           type=sha,prefix={{branch}}-
@@ -78,7 +78,7 @@ jobs:
         context: .
         push: false
         load: true
-        tags: diet-analysis:test
+        tags: davidcad3na/diet-analysis:test
         cache-from: type=gha
         cache-to: type=gha,mode=max
         
