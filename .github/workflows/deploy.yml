@@ -119,7 +119,7 @@ jobs:
     - name: Run Docker Compose deployment simulation
       run: |
         echo "Simulating deployment with Docker Compose..."
-        docker-compose config
+        docker compose config
         echo "Docker Compose configuration validated"
         
     - name: Simulate container deployment
